@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  private baseUrl='http://localhost:8080/api/products';
+  private baseUrl='http://localhost:8080/api/products?size=100';
   constructor(private httpClint:HttpClient) { }
 getProductList():Observable<Product[]>{
   return this.httpClint.get<GetResponse>(this.baseUrl).pipe(

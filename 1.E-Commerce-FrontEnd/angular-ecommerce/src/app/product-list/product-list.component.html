@@ -1,5 +1,24 @@
 <p>product-list works!</p>
-<div *ngFor="let tempProduct of products">
+<!-- <div *ngFor="let tempProduct of products">
     {{tempProduct.name}} :{{tempProduct.unitPrice}}
 
-</div>
+</div> -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Unit Price</td>
+            <td>Unit Stock</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempProduct of products">
+            <td>{{tempProduct.name}}</td>
+            <td>{{tempProduct.unitPrice}}</td>
+            <td>{{tempProduct.unitStock}}</td>
+        </tr>
+    </tbody>
+
+</table>
