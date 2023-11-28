@@ -1,2 +1,5 @@
 <p>product-list works!</p>
-<h1>this is another project</h1>
+<div *ngFor="let tempProduct of products">
+    {{tempProduct.name}} :{{tempProduct.unitPrice}}
+
+</div>
